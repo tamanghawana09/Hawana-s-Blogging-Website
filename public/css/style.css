@@ -1,0 +1,282 @@
+@import 'color.css';
+@import 'reset.css';
+
+/* start of header section */
+body{
+    background-color:var(--primary-color); 
+    overflow-x: hidden;
+}
+.nav-container{
+    padding: 12px;
+}
+.nav-container > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100vw;
+    flex-wrap: wrap;
+}
+.nav-container > nav > .left > a{
+    margin-right: 20px;
+}
+.nav-container > nav > .left > a > i{
+    color: var(--primary-font-color);
+    font-size: 20px;
+}
+.nav-container > nav > .center > h1{
+    color: var(--primary-font-color);
+    font-family: 'Inter';
+    font-size: 2rem;
+}
+.nav-container > nav > .right > a{
+    padding: 8px;
+    width: 8vw;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-font-color);
+    font-family: 'Inter';
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+header > .line{
+    height: 2px;
+    background-color: white;
+}
+/* end of header section */
+
+
+/* start of main header section */
+.main-nav > nav > ul{
+    padding: 20px;
+}
+.main-nav > nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 3rem;
+    flex-wrap: wrap;
+}
+.main-nav > nav > ul > li > a{
+    text-decoration: none;
+    color: var(--primary-font-color);
+    font-family: "Inter";
+}
+/* end of main header section */
+
+/* start of main content section */
+main > .main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > .main-container > img{
+    padding: 10px;
+    max-width: 95%;
+    height: auto;
+    object-fit: contain;
+}
+main > .line{
+    height: 2px;
+    background-color: white;
+}
+/* end of main content section */
+
+/* start of main content blog section */
+main > .blog-container{
+    padding: 20px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+main > .blog-container > .text > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--primary-font-color);
+}
+main > .blog-container > .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > .blog-container > .card > .card-body{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-font-color);
+    color: var(--primary-color);
+    padding: 20px;
+    font-family: 'Inter';
+    width: 40vw;
+    justify-content: center;
+    
+}
+main > .blog-container > .card >.card-body > .button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+main > .blog-container > .card > .card-body > .button > a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Inter';
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+main > .blog-container > .card > .card-body > .button > .btn1{
+    background-color: var(--btn-color);
+    color: var(--primary-font-color);
+}
+main > .blog-container > .card > .card-body > .button > .btn2{
+    background-color: rgb(24, 170, 193);
+    color: var(--primary-font-color);
+}
+main > .blog-container > .card > .card-body > .button > form > .btn-red{
+    padding: 10px;
+    font-family: 'Inter';
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(219, 47, 47);
+    color: var(--primary-font-color);
+}
+@media screen and (max-width:1145px) {
+    main> .blog-container{
+        grid-template-columns: 1fr;
+        row-gap:20px
+    }
+}
+/* end of main content blog container */
+
+/* start of about section */
+main > .about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    font-family: 'Inter';
+    padding: 20px;
+}
+main > .about-container > .text > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+}
+main > .about-container > .about-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+}
+main > .about-container > .about-box > .left > img{
+    object-fit: contain;
+    width: 25vw;
+    height: auto;
+}
+main > .about-container >.about-box>.about {
+    max-width: 35vw;
+    padding: 20px;
+}
+main > .about-container > .about-box>  .about > p{
+    font-size: 1.2rem;
+    color: var(--primary-font-color);
+    text-align: left;
+}
+/* end of about section */
+
+
+/* start of contact section */
+main > .contact-container{
+    background-color: var(--secondary-color);
+    font-family: 'Inter';
+    padding: 20px;
+}
+main > .contact-container > .text > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--primary-font-color);
+}
+main > .contact-container > .contact-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--primary-font-color);
+}
+main> .contact-container > .contact-box > .left{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+}
+main > .contact-container > .contact-box > .right > form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    row-gap: 20px;
+    box-shadow: -2px 1px 54px -24px rgba(255,255,255,0.55);
+    -webkit-box-shadow: -2px 1px 54px -24px rgba(255,255,255,0.55);
+    -moz-box-shadow: -2px 1px 54px -24px rgba(255, 255, 255, 0.55);
+}
+main > .contact-container > .contact-box > .right > form > input, textarea{
+    padding: 15px;
+    width: 20vw;
+    border-radius: 4px;
+    font-family: 'Inter';
+}
+
+main > .contact-container > .contact-box > .right > form > button{
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-font-color);
+    border: none;
+    border-radius: 10px;
+}
+main > .contact-container > .contact-box > .right > form > button > a{
+    text-decoration: none;
+    color:var(--primary-font-color);
+    font-family: 'Inter';
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* end of contact section */
+
+
+/* start of footer section */
+footer > .footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    padding: 10px;
+    font-family: 'Inter';
+    font-size: 1rem;
+}
